@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bryce Goleman's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        * body{
+            background-color:rgb(173, 252, 252);
+            z-index: -99;
+        }
+
+        .container {
+            position: relative;
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            z-index: 0;
+            
+        }
+        #mikey-picture {
+            position: relative;
+            height: 200px;
+            width: 400px;
+            background-image: url(./My_Puppy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 150px;
+            z-index: 2;
+        }
+        #h2 {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color:aqua;
+            margin-top: -300px;
+            z-index: 1;
+        }
+        
+        .content {
+            width: inherit;
+            height: 300px;
+            background-color: aqua;
+            border-radius: 41px 41px 0px 0px;
+            color:rgb(0, 0, 0);
+        }
+        
+        .container > nav{
+            margin-left: 80px;
+            margin-top: 6px;
+            color: #000000;
+        }
+
+        a button{
+            position: relative;
+            background-color: #fa6a6a;
+            width: 180px;
+            height: 85px;
+            border-radius: 25px;
+            text-align: center;
+            border-color: #000000;
+            border-width: 0px;
+            border-style:none;
+            
+            z-index: 3;
+           
+        }
+        a button{
+            color:#000000;
+            font-family: "Moderustic", sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400px;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+
+        a:hover button {
+            background-color:#3660bc;
+            font-family: "Moderustic", sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 800;
+            text-transform: capitalize;
+            text-decoration: none;
+            letter-spacing: 3px;
+        }
+       
+            
+        a:visited button {
+            color:#ffffff;
+            font-family: "Moderustic", sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400px;
+            text-transform: capitalize;
+            text-decoration: none;
+            border-color: #000000;
+            border-width: 1px;
+            border-style: solid;
+            
+        }
+
+        header {
+            font-size: 30px;
+            font-family: "Moderustic", sans-serif;
+            font-weight: 800px;
+            Text-align: center;
+            background-color: inherit;
+            line-height: normal;
+            margin-top: 150px;
+        }
+       
+
+        #content {
+            background-color:aqua;
+            
+            
+        }
+
+        #about {
+            background-color:aqua;
+            color:#000000;
+            font-family: "Moderustic", sans-serif;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 700px;
+            line-height: normal;
+            margin-top: -10px;
+            
+
+        }
+
+        #about::first-letter{
+            font-family: "Moderustic", sans-serif;
+            font-size: 55px;
+        }
+
+        #sectionHeadings{
+
+            background-color:aqua;
+            border-radius: 3px; 
+            border-color:#3660bc;
+            color: #000000;
+            font-family: "Moderustic", sans-serif;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 500px;
+            line-height: normal;
+            margin-top: 10px;
+            z-index: 7;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="mikey-picture"></div>
+        
+        <nav id="Navigation">
+            <a href="#about"><button>About</button></a> 
+            <a href="#why"><button>Why</button></a> 
+            <a href="#contact"><button>Contact</button></a> 
+
+        </nav>
+        
+
+        <div id="content">
+
+            
+            <div id="h2"></div>
+            <header id="Bryce">Bryce's Portfolio</header>
+            <p id="sectionHeadings">About me</p>
+            <div id="about">
+
+                I like watching fish swim around. I also enjoy playing games and watching movies
+                on very rare occasions.
+
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
