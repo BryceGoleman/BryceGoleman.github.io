@@ -2,12 +2,17 @@
 <html>
 
 <head>
+    
     <title>Bryce Goleman's Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
     <style>
+        /* Logo: https://www.youtube.com/c/FishForThought.
+           Goldfish image: Photo by Jeffry Surianto: https://www.pexels.com/photo/goldfish-in-dark-26922438/.
+           koi video: Video by Pixabay: https://www.pexels.com/video/koi-fishes-856951/
+        */
         * body{
             background-color:rgb(173, 252, 252);
             z-index: -99;
@@ -83,11 +88,11 @@
         }
         
         
-        #mikey-picture {
+        #goldfish-picture {
             position: relative;
             height: 300px;
             width: 500px;
-            background-image: url(./My_Puppy.jpg);
+            background-image: url(./goldfish.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             border: 10px solid #3660bc;
@@ -266,7 +271,7 @@
             border: 10px solid black;
             line-height: normal;
             margin-top: 965px;
-            margin-left: -200px;
+            margin-left: -198px;
         }
         
 
@@ -320,6 +325,44 @@
             100% {
                 box-shadow: 0 0px 65px rgb(29, 235, 108);
             }
+           
+        }
+        @media only screen and (max-width: 1200px) {
+            #koi-video {
+                height: 3750px;
+            }
+            #section5 {
+                height: 300px;
+                width:1700px;
+                margin-top:1720px;
+                font-size: 50px;
+                margin-left: -10px;
+            }
+            #containerAB {
+                height: 500px;
+                width: 1500px;
+                font-size: 60px;
+                margin-left: 100px;
+                margin-top: -1900px;
+            }
+            #me2 {
+                height: 800px;
+                width:550px;
+                margin-top: 1600px;
+            }
+            a button {
+                height: 500px;
+                width:500px;
+                margin-left: -200px;
+                margin-top: 100px;
+
+            }
+            #goldfish-picture {
+                height:600px;
+                width: 800px;
+                margin-left: 400px;
+            }
+
         }
        
         
@@ -339,7 +382,7 @@
         <div id="overlay"></div>
     </div>
     <div class="container2">
-        <div id="mikey-picture"></div>
+        <div id="goldfish-picture"></div>
         
     </div>
     <div class="container4">
