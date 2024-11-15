@@ -1,0 +1,8 @@
+
+let numExample = 25;
+var stringExample = "I'm a string"
+const pi = 3.14159
+
+let arrayExample = ("1", 1, "0", 0)
+
+console.log('The variable numExample has the value of $(numExample)')
