@@ -1,8 +1,97 @@
 
-let numExample = 25;
-var stringExample = "I'm a string"
-const pi = 3.14159
+// write a variable that is a string and output to console (hint: it's console.log(variable name))
 
-let arrayExample = ("1", 1, "0", 0)
+let string1 = "I am a human being I swear."
 
-console.log('The variable numExample has the value of $(numExample)')
+console.log(string1)
+
+// write a variable that is a number and output to console (hint: it's console.log(variable name))
+let number2 = 240
+console.log(number2)
+// write a variable that takes any two numbers and adds them 
+let addition1 = 3
+let addition2 = 4
+
+console.log(addition1 + addition2)
+// write a variable that takes any two numbers and subtracts them and output to console
+let subtraction1 = 9
+let subtraction2 = 3
+
+console.log(subtraction1 - subtraction2)
+// write a variable that takes any two numbers and performs a modulo that has a value of 1  and output to console 
+let x = 11;
+let y= 2;
+
+
+console.log(x % y)
+// write a variable that takes any two numbers and perform an exponential value and output to console 
+let o = 209;
+let p = 8;
+
+console.log(o ** p);
+
+// write a statement that is false using a conditional statement and output to console 
+console.log(addition1 === subtraction1)
+
+// I have created an object below, output to console the value of "breed" (hint: the structure is ObjectName.value you want to call) 
+// the keyword "this" is self referencing the object 
+
+let fish = {
+    breed : "pretty fish", 
+    personality: "water puppies", 
+    reason: "because they will follow you around and beg for food",
+    
+    output: function() {
+
+        return `Koi are ${this.breed} that are actually just ${this.personality} ${this.reason}`
+
+    }
+    
+}
+
+
+
+// methods! You call methods the same way you call a function.  I'll call siggy.output() below. 
+console.log(fish.output);
+
+
+
+// copy + paste the siggy object below and rename the variable from Siggy to an animal or name of your choice 
+// then, I want you to change the object to the value of your choosing. Done.
+
+// console.log the values of that object one by one.   This is the only thing causing me problems.
+
+// create an array 
+let array1 = ["3", 3, "9", 9]
+console.log(array1)
+console.log(array1[0])
+console.log(array1[1])
+console.log(array1[2])
+console.log(array1[3])
+
+// call the value in the 3 position of this array and output to console 
+
+let someArray = ["Ishrat", "Is", "Really", "Proud", "Of", "You"]
+console.log(someArray[2])
+console.log(someArray.length)
+for (let i = 0; i < someArray.length; i++){
+    console.log(someArray[i])
+}
+
+// call all values in the array using a loop 
+
+// what is the value of the variable ifStatement, leave your answer in the console. 
+
+let ifStatement; 
+let value = 5; 
+
+if(value < 5)
+{
+    ifStatement = true;
+}
+
+else{
+    ifStatement = false; 
+}
+console.log("The value is 5. Meaning the statement can be neither true or false since both sides are 5. The ifStatement is \
+    if 5 is less than 5 than it is true, if not than it is false.")
