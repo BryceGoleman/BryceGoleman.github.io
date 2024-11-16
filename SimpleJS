@@ -69,6 +69,8 @@ console.log(array1[1])
 console.log(array1[2])
 console.log(array1[3])
 
+console.log(array1[2])
+
 // call the value in the 3 position of this array and output to console 
 
 let someArray = ["Ishrat", "Is", "Really", "Proud", "Of", "You"]
