@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bryce Goleman's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        /*Waterfall Video: Video by Engin Akyurt: https://www.pexels.com/video/beautiful-sight-of-nature-2098988/.
+          Koi image: Photo by Leah Louviere: https://www.pexels.com/photo/close-up-of-fish-20413952/.
+          The other images are my pictures of my dog and I and one of him sleeping from my phone.
+        */
+        * body{
+            background-color:rgb(173, 252, 252);
+            z-index: -99;
+        }
+
+        .video{
+            height: 500px;
+            width: 500px;
+            z-index: -2;
+        }
+        
+        #waterfall-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1800px;
+            width: 1900px;
+            object-fit:cover;
+            z-index: -1;
+        } 
+
+        #overlay{
+            background-color:gray;
+            opacity:.6;
+            mix-blend-mode: color;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 500;
+            width: 500px;
+            z-index: 0;
+        }
+        
+
+        .container {
+            position: relative;
+            width:900px;
+            height: 600px;
+            margin: auto;
+            z-index: 0;
+            
+        }
+        .container2 {
+            position: relative;
+            width:900px;
+            height: 600px;
+            margin: auto;
+            z-index: 0;
+            
+        }
+        .container3 {
+            position: relative;
+            width:900px;
+            height: 300px;
+            margin: auto;
+            z-index: 0;
+        }
+        .container4 {
+            position: relative;
+            width:400px;
+            height: 500px;
+            margin: auto;
+            z-index: 0;
+            
+        }
+        .container5 {
+            align-items:center;
+            position: relative;
+            width:0px;
+            height: 300px;
+            margin: auto;
+            margin-left:900px;
+    
+            z-index: 0;
+        }
+        .container6 {
+            align-items:center;
+            position: relative;
+            width:500px;
+            height: 300px;
+            margin: auto;
+            margin-left:600px;
+            margin-top: 100px; 
+            z-index: 0;
+        }
+        #mikey-picture {
+            position: relative;
+            height: 300px;
+            width: 500px;
+            background-image: url(./My_Puppy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 10px solid #3660bc;
+            border-radius: 30%;
+            margin-right: auto;
+            margin-left: 220px;
+            margin-top: -350px;
+            z-index: 2;
+        }
+        
+        #me {
+            position: relative;
+            height: 400px;
+            width: 300px;
+            background-image: url(./me.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 5px solid #3660bc;
+            border-radius: 30%;
+            margin-right: auto;
+            margin-left: -550px;
+            margin-top: 300px;
+            z-index: 3;
+        }
+        #h2 {
+            position: relative;
+            width: 200%;
+            height: 200px;
+            background-color:aquamarine;
+            border: 8px solid black;
+            text-align: center;
+            font-family: "Moderustic", sans-serif;
+            font-size: 25px;
+            font-style: oblique;
+            line-height:0.6in;
+            margin-left:-1220px;
+            margin-top: -1100px;
+            z-index: 1;
+        }
+        #myabout {
+            position: relative;
+            width: 200%;
+            height: 200px;
+            background-color:aquamarine;
+            border: 8px solid black;
+            text-align: center;
+            font-family: "Moderustic", sans-serif;
+            font-size: 25px;
+            font-style: oblique;
+            line-height:0.6in;
+            margin-left:-800px;
+            margin-top: 0px;
+            z-index: 1;
+        }
+        
+        .content {
+            width:inherit;
+            height: 300px;
+            background-color: aqua;
+            border-radius: 41px 41px 0px 0px;
+            color:rgb(0, 0, 0);
+        }
+        
+         nav{
+            margin-left: 420px;
+            margin-top: -380px;
+            color: #000000;
+        }
+        
+
+        a button{
+            position: relative;
+            background-image:url("koi-img.jpg");
+            background-size:contain;
+            width: 300px;
+            height: 150px;
+            border-radius: 25px;
+            text-align: center;
+            margin-top:300px;
+            margin-left:-100px;
+            border-width: 0px;
+            border-style:none;
+            
+            z-index: 3;
+           
+        }
+        a button{
+            border-color: #000000;
+            color:#000000;
+            font-family: "Moderustic", sans-serif;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 600px;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: all 2s ease-in;
+            animation: glow 1s ease-in-out infinite;
+            
+        }
+
+        a:hover button {
+            font-family: "Moderustic", sans-serif;
+            font-size: 37px;
+            font-style: italic;
+            font-weight: 500;
+            text-transform: bold;
+            text-decoration: none;
+            
+            letter-spacing: 3px;
+            transform:rotate(360deg);
+        }
+       
+            
+        a:visited button {
+            
+            font-family: "Moderustic", sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400px;
+            text-transform: capitalize;
+            text-decoration: none;
+            transform: scale(1.00);
+            transform:scale(1.oo);
+            border-radius:40px;
+            border: 5px solid black;
+            
+        }
+
+        header {
+            font-size: 30px;
+            font-family: "Moderustic", sans-serif;
+            font-weight: 800px;
+            Text-align: center;
+            background-color: inherit;
+            line-height: normal;
+            margin-top: 150px;
+        }
+        .container3 {
+            height: 100px;
+            font-size: 30px;
+            font-family: "Moderustic", sans-serif;
+            font-weight: 200px;
+            Text-align: center;
+            background-color: inherit;
+            line-height: normal;
+            margin-top: 203px;
+            margin-left: 540px;
+            
+        }
+
+        #content {
+            
+            height: 300px;
+            width: 600px;
+            margin-left: 670px;
+            
+            
+        }
+
+        #koi {
+            
+            
+            color:#000000;
+            font-family: "Moderustic", sans-serif;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 700px;
+            line-height: normal;
+            margin-left: 200px;
+            
+
+        }
+
+        #koi::first-letter{
+            font-family: "Moderustic", sans-serif;
+            font-size: 55px;
+        }
+        
+
+        #sectionHeadings{
+            align-items: center;
+            width: 170px;
+            background-color: aquamarine;
+            border-radius: 30%; 
+            color: #000000;
+            font-family: "Moderustic", sans-serif;
+            text-align:center;
+            font-size: 35px;
+            font-style: italic;
+            font-weight: 600px;
+            line-height: normal;
+            margin-left: 500px;
+            z-index: 7;
+        }
+        
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0px 65px turquoise;
+            }
+            10% {
+                box-shadow: 0 0px 63px rgb(64, 224, 147);
+            }
+            20% {
+                box-shadow: 0 0px 59px rgb(47, 208, 71);
+            }
+            30% {
+                box-shadow: 0 0px 54px rgb(220, 237, 36);
+            }
+            40% {
+                box-shadow: 0 0px 52px rgb(219, 157, 23);
+            }
+            50% {
+                box-shadow: 0 0px 47px rgb(227, 34, 34);
+            }
+            60% {
+                box-shadow: 0 0px 52px rgb(229, 132, 195);
+            }
+            70% {
+                box-shadow: 0 0px 54px rgb(227, 49, 230);
+            }
+            80% {
+                box-shadow: 0 0px 59px rgb(138, 21, 189);
+            }
+            90% {
+                box-shadow: 0 0px 63px rgb(33, 16, 163);
+            }
+            100% {
+                box-shadow: 0 0px 65px rgb(29, 187, 235);
+            }
+        }
+        @media only screen and (max-width: 430px) {
+            #waterfall-video {
+                height: 3750px;
+            }
+            a button{
+                height: 300px;
+                width: 600px;
+                margin-top:800px;
+                margin-left: 65px
+            }
+            #mikey-picture {
+                height: 400px;
+                width: 700px;
+                margin-left: 500px;
+            }
+            #me {
+                margin-left: 50px;
+                margin-top: 1200px;
+                height:700px;
+                width: 500px
+            }
+            #h2 {
+                height: 450px;
+                font-size: 55px;
+                margin-left: -1400px;
+                margin-top: -1700px
+            }
+            #myabout {
+                height: 400px;
+                width: 800px;
+                font-size: 40px;
+                margin-top: 900px;
+                margin-left: -900px;
+            }
+
+
+        }
+       
+        
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <video id="waterfall-video" autoplay loop muted>
+            <source src="waterfall_video.mp4" type="video/mp4">
+            
+        </video>
+        <div id="overlay"></div>
+    </div>
+    <div class="container2">
+        <div id="mikey-picture"></div>
+        
+    </div>
+    
+    <div class="container4">
+        <div id="me"></div>
+    </div>
+    <div class="container">
+        
+        
+        <nav id="Navigation">
+            <a href="#koi"><button onclick="document.location='final2.html'">koi ponds</button>
+                
+            </a> 
+        </nav>
+        
+    </div>
+    
+    <div class="container5">
+        <div id="content">
+
+            
+         <div id="h2">This is my dog Mikey. He is a <a href="https://en.wikipedia.org/wiki/Lancashire_Heeler" target="_blank"
+             style="background-color: rgba(128, 213, 253); color: black; font-weight: 550;">Lancashire Heeler</a>.
+            He is a very sleepy and loving boy. He does not take kindly to strangers however.
+            He does love his rubs.One strange fact about him is he has a fear of bottles.
+            I have no idea why or where that fear came from, but he will not let one 
+            near him.
+         </div> 
+            
+          
+    </div>
+        <section class="container6">
+
+          <div id="myabout">I love watching fish swim around. I have a koi pond and an aquarium and like to just sit and watch them.
+            I also enjoy playing video games. My favorite game would have to be Viva Piñata. Unfortunately they took the website down
+            almost a decade ago.  </div> 
+        </section>
+    
+            
+            
+
+        
+
+        
+   
+
+</body>
+
+
+</html>
